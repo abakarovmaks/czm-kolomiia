@@ -81,7 +81,6 @@ function init() {
 }
 
 function animate() {
-  // note: three.js includes requestAnimationFrame shim
   stats.begin();
   delta = clock.getDelta();
   requestAnimationFrame(animate);
