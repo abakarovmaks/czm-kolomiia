@@ -1,4 +1,4 @@
-var camera, scene, renderer, geometry, material, mesh;
+let camera, scene, renderer, geometry, material, mesh;
 
 init();
 animate();
@@ -38,9 +38,7 @@ function init() {
 
   textGeo = new THREE.PlaneGeometry(300, 300);
   THREE.ImageUtils.crossOrigin = ''; //Need this to pull in crossdomain images from AWS
-  textTexture = THREE.ImageUtils.loadTexture(
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/95637/quickText.png',
-  );
+  textTexture = THREE.ImageUtils.loadTexture('../images/logo.png');
   textMaterial = new THREE.MeshLambertMaterial({
     color: 0x00ffff,
     opacity: 1,
@@ -60,7 +58,7 @@ function init() {
     'https://s3-us-west-2.amazonaws.com/s.cdpn.io/95637/Smoke-Element.png',
   );
   smokeMaterial = new THREE.MeshLambertMaterial({
-    color: 0x00dddd,
+    color: 0xffffff,
     map: smokeTexture,
     transparent: true,
   });
