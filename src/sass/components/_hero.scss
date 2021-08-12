@@ -1,5 +1,4 @@
-.hero {
-  height: 500px;
+main {
   background-color: rgb(35, 37, 35);
 }
 
@@ -12,4 +11,13 @@
   padding-right: 15px;
   margin: auto;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
