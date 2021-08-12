@@ -10,6 +10,11 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(35, 37, 35);
+}
+
 // utils
 @import './utils/veriables';
 @import './utils/visually-hidden';
