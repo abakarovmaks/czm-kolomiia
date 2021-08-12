@@ -2,22 +2,18 @@ main {
   background-color: rgb(35, 37, 35);
 }
 
-.greetings {
-  color: red;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
   text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.logo {
+.hero-logo {
   padding-top: 70px;
   padding-bottom: 30px;
+}
+
+.hero-image {
+  padding-bottom: 20px;
 }
