@@ -2,7 +2,7 @@
   background-color: white;
   z-index: 2;
 
-  padding-top: 80px;
+  padding-top: 120px;
 
   text-align: center;
 
@@ -61,6 +61,8 @@
   position: absolute;
   top: 5%;
   right: 10%;
+
+  z-index: 100;
 }
 
 .icon-open {
