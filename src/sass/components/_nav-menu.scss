@@ -76,3 +76,16 @@
 .icon-close {
   fill: $primary-text-color;
 }
+
+.icon {
+  height: 50px;
+}
+
+.adress-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.adress-link:first-child {
+  align-items: flex-end;
+}
