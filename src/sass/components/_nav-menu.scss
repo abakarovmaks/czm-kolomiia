@@ -33,6 +33,11 @@
   padding-bottom: 40px;
 
   font-size: 26px;
+
+  text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
+    1px 0px 3px rgb(0 0 0);
+
+  color: white;
 }
 
 .nav-link {
@@ -41,6 +46,11 @@
 
 .nav-adress {
   padding-top: 40px;
+
+  text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
+    1px 0px 3px rgb(0 0 0);
+
+  color: white;
 }
 
 .footer-adress {
@@ -81,7 +91,7 @@
 }
 
 .icon-close {
-  fill: $primary-text-color;
+  fill: $primary-icon-color;
 }
 
 .icon {
@@ -91,6 +101,8 @@
 .adress-link {
   display: inline-flex;
   align-items: center;
+
+  color: white;
 }
 
 .adress-link:first-child {
