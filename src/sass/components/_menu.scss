@@ -1,13 +1,10 @@
-.menu-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.8)),
-    url('/images/hookah-ape.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  height: 100%;
-}
-
 .menu {
   height: 600px;
+}
+
+.menu-background {
+  background-image: $background-menu;
+  @extend %background-image;
+
+  height: 100%;
 }

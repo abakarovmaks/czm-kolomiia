@@ -1,12 +1,13 @@
 .nav-container {
   background: url('/images/smoke.png');
-  background-position: bottom;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
-  background-color: $primary-text-color;
+  width: 100%;
+  height: -webkit-fill-available;
 
-  z-index: 2;
+  background-color: $primary-text-color;
 
   padding-top: 120px;
 
@@ -15,12 +16,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: -webkit-fill-available;
   opacity: 0;
 
   transform: translateY(-100%);
   transition: transform 250ms ease-in, opacity 250ms ease-in;
+
+  z-index: 2;
 
   &.is-open {
     transform: translateX(0);
@@ -29,15 +30,14 @@
 }
 
 .nav-title {
-  text-transform: uppercase;
+  color: white;
+
   padding-bottom: 40px;
 
   font-size: 26px;
-
+  text-transform: uppercase;
   text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
     1px 0px 3px rgb(0 0 0);
-
-  color: white;
 }
 
 .nav-link {
@@ -45,20 +45,27 @@
 }
 
 .nav-adress {
+  color: white;
+
   padding-top: 40px;
 
   text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
     1px 0px 3px rgb(0 0 0);
-
-  color: white;
 }
 
-.footer-adress {
-  margin-bottom: 20px;
-}
+// Button icons
 
-.footer-schedule {
-  margin-top: 20px;
+.button-menu {
+  background-color: transparent;
+
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 5%;
+  right: 10%;
+
+  z-index: 100;
 }
 
 .button-menu .icon-open {
@@ -73,16 +80,12 @@
   display: none;
 }
 
-.button-menu {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
+.icon {
+  height: 50px;
+}
 
-  position: absolute;
-  top: 5%;
-  right: 10%;
-
-  z-index: 100;
+.icon-close {
+  fill: $primary-icon-color;
 }
 
 .icon-open,
@@ -90,29 +93,37 @@
   fill: $primary-icon-color;
 }
 
-.icon-close {
-  fill: $primary-icon-color;
+.hookah-icons {
+  padding-top: 70px;
+
+  @extend %flex;
 }
 
-.icon {
-  height: 50px;
+// Footer
+
+.footer-adress {
+  font-style: normal;
+
+  margin-bottom: 20px;
 }
 
 .adress-link {
+  color: white;
+
   display: inline-flex;
   align-items: center;
-
-  color: white;
 }
 
 .adress-link:first-child {
   align-items: flex-end;
 }
 
-.hookah-icons {
-  padding-top: 70px;
+.footer-svg {
+  margin-right: 10px;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-schedule {
+  @extend %flex;
+
+  margin-top: 20px;
 }
