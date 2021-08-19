@@ -1,5 +1,5 @@
 .nav-container {
-  background: url('/images/smoke.png');
+  background-image: url('/images/smoke.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,6 +23,24 @@
 
   z-index: 2;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 160px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    opacity: 1;
+    position: initial;
+    transform: initial;
+    z-index: initial;
+
+    padding: 120px 120px;
+
+    margin-top: 160px;
+
+    background-image: url('/images/smoke.png'),
+      linear-gradient(to right, (#434343), (#000000));
+  }
+
   &.is-open {
     transform: translateX(0);
     opacity: 1;
@@ -32,13 +50,25 @@
 .nav-title {
   color: white;
 
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   word-spacing: 5px;
   font-size: 26px;
   text-transform: uppercase;
   text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
     1px 0px 3px rgb(0 0 0);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 38px;
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 60px;
+    margin-bottom: 50px;
+
+    word-spacing: 30px;
+  }
 }
 
 .nav-link {
@@ -48,10 +78,20 @@
 .nav-adress {
   color: white;
 
-  padding-top: 40px;
+  margin-top: 40px;
 
   text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
     1px 0px 3px rgb(0 0 0);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    margin-top: 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+    margin-top: 50px;
+  }
 }
 
 // Button icons
@@ -59,14 +99,15 @@
 .button-menu {
   background-color: transparent;
 
-  width: 40px;
-  height: 40px;
-
   position: absolute;
   top: 5%;
   right: 10%;
 
   z-index: 100;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .button-menu .icon-open {
@@ -83,6 +124,10 @@
 
 .icon {
   height: 50px;
+
+  @media screen and (min-width: $tablet) {
+    height: 70px;
+  }
 }
 
 .icon-close {
@@ -102,7 +147,26 @@
 .hookah-icons {
   margin-top: 70px;
 
+  @media screen and (min-width: $tablet) {
+    margin-top: 100px;
+  }
+
   @extend %flex;
+}
+
+.button-menu svg {
+  width: 40px;
+  height: 40px;
+
+  @media screen and (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 // Footer
@@ -111,6 +175,10 @@
   font-style: normal;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .adress-link {
@@ -126,10 +194,27 @@
 
 .footer-svg {
   margin-right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .footer-schedule {
   @extend %flex;
 
   margin-top: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 30px;
+  }
 }
