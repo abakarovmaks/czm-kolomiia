@@ -34,6 +34,7 @@
 
   padding-bottom: 40px;
 
+  word-spacing: 5px;
   font-size: 26px;
   text-transform: uppercase;
   text-shadow: 1px 4px 5px rgb(0 0 0), 0px 3px 5px rgb(0 0 0),
@@ -89,12 +90,17 @@
 }
 
 .icon-open,
-.icon-menu {
+.icon-menu,
+.icon-insta {
   fill: $primary-icon-color;
 }
 
+.icon-insta {
+  margin-top: 50px;
+}
+
 .hookah-icons {
-  padding-top: 70px;
+  margin-top: 70px;
 
   @extend %flex;
 }
